@@ -1,7 +1,4 @@
-from fastai.vision.all import (load_learner,PILImage,PILImage)
 from fastai.vision.all import *
-#from requests import patch
-#from pathlib import Path
 import glob
 from random import shuffle
 import urllib.request
