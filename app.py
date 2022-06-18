@@ -5,8 +5,8 @@ import urllib.request
 import streamlit as st
 import pathlib
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+#temp = pathlib.PosixPath
+#pathlib.PosixPath = pathlib.WindowsPath
 
 image1 = Image.open('image1.jpg')
 # title
