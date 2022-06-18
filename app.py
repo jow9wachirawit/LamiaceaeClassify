@@ -12,8 +12,8 @@ image1 = Image.open('image1.jpg')
 # title
 st.title("Lamiaceae Classify")
 # load model
-model_url = "https://github.com/KaiZer003/ProjectpythonDeploy/raw/c78341c53f34ce6ec7b6498b9e8057023eaec320/googlenet_model-2.pkl"
-urllib.request.urlretrieve(model_url,"model.pkl")
+# model_url = "https://github.com/KaiZer003/ProjectpythonDeploy/raw/c78341c53f34ce6ec7b6498b9e8057023eaec320/googlenet_model-2.pkl"
+# urllib.request.urlretrieve(model_url,"model.pkl")
 learn_inf = load_learner('model.pkl',cpu=True)
 
 def predict(img, learn):
