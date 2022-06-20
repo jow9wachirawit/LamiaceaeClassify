@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 fastai
-=======
-fastai
->>>>>>> bc7568ca6ef0b267b24ccca1533fa968d2c54d83
