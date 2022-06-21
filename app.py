@@ -42,7 +42,7 @@ shuffle(valid_images)
        # st.sidebar.write("Lamiaceae Classify at Github [link](https://github.com/KaiZer003/ProjectpythonDeploy)")
         # st.stop()
 # upload
-if #if option == 'Use your own image':
+if option == 'Use your own image':
     st.sidebar.write('### Select an image to upload')
     fname = st.sidebar.file_uploader('',
                                      type=['png', 'jpg', 'jpeg'],
