@@ -28,7 +28,7 @@ def predict(img, learn):
 st.sidebar.title('Enter Lamiaceae Classify')
 
 # image selection
-option = st.sidebar.radio('',['Use your own image'])
+option = st.sidebar.radio('',['take a photo', 'Use your own image'])
 valid_images = glob.glob('images/valid/*/*')
 shuffle(valid_images)
 # take a photo
