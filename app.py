@@ -28,21 +28,21 @@ def predict(img, learn):
 st.sidebar.title('Enter Lamiaceae Classify')
 
 # image selection
-option = st.sidebar.radio('',['take a photo', 'Use your own image'])
+option = st.sidebar.radio('',['Use your own image']) #['take a photo', 'Use your own image']
 valid_images = glob.glob('images/valid/*/*')
 shuffle(valid_images)
 # take a photo
-if option == 'take a photo':
-    st.sidebar.write('### take a photo')
-    fname = st.sidebar.camera_input('')
-    if fname is None:
-        st.subheader('give me your besil')
-        st.image(image1, caption='image by jannoon028', width=None)
-        st.sidebar.write("AI Builders page [link](https://www.facebook.com/aibuildersx)")
-        st.sidebar.write("Lamiaceae Classify at Github [link](https://github.com/KaiZer003/ProjectpythonDeploy)")
-        st.stop()
+#if option == 'take a photo':
+ #   st.sidebar.write('### take a photo')
+  #  fname = st.sidebar.camera_input('')
+   # if fname is None:
+    #    st.subheader('give me your besil')
+     #   st.image(image1, caption='image by jannoon028', width=None)
+      #  st.sidebar.write("AI Builders page [link](https://www.facebook.com/aibuildersx)")
+       # st.sidebar.write("Lamiaceae Classify at Github [link](https://github.com/KaiZer003/ProjectpythonDeploy)")
+        # st.stop()
 # upload
-else:
+if:
     st.sidebar.write('### Select an image to upload')
     fname = st.sidebar.file_uploader('',
                                      type=['png', 'jpg', 'jpeg'],
