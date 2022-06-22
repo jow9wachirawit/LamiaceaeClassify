@@ -14,7 +14,7 @@ st.title("Lamiaceae Classify")
 # load model
 # model_url = "https://github.com/KaiZer003/ProjectpythonDeploy/raw/c78341c53f34ce6ec7b6498b9e8057023eaec320/googlenet_model-2.pkl"
 # urllib.request.urlretrieve(model_url,"model.pkl")
-learn_inf = load_learner('model.pkl',cpu=True)
+learn_inf = load_learner('googlenet_model_3.pkl',cpu=True)
 
 def predict(img, learn):
     # make prediction
@@ -27,10 +27,21 @@ def predict(img, learn):
 #title sidebar
 st.sidebar.title('Enter Lamiaceae Classify')
 
-# image source selection
-option = st.sidebar.radio('',['Use your own image'])
+# image selection
+option = st.sidebar.radio('',['Use your own image']) #['take a photo', 'Use your own image']
 valid_images = glob.glob('images/valid/*/*')
 shuffle(valid_images)
+# take a photo
+#if option == 'take a photo':
+ #   st.sidebar.write('### take a photo')
+  #  fname = st.sidebar.camera_input('')
+   # if fname is None:
+    #    st.subheader('give me your besil')
+     #   st.image(image1, caption='image by jannoon028', width=None)
+      #  st.sidebar.write("AI Builders page [link](https://www.facebook.com/aibuildersx)")
+       # st.sidebar.write("Lamiaceae Classify at Github [link](https://github.com/KaiZer003/ProjectpythonDeploy)")
+        # st.stop()
+# upload
 if option == 'Use your own image':
     st.sidebar.write('### Select an image to upload')
     fname = st.sidebar.file_uploader('',
